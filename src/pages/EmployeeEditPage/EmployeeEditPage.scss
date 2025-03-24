@@ -1,0 +1,35 @@
+@use "../../styles/variables" as *;
+
+.employee-edit-page {
+  max-width: $max-width-content;
+  margin: 0 auto;
+  padding: $spacing-large;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font-family-primary;
+  text-align: left;
+
+  .employee-edit-link {
+    font-family: $font-family-primary;
+    font-size: $font-size-medium;
+    cursor: pointer;
+    color: $primary-color;
+  }
+
+  .employee-edit-title {
+    font-size: $font-size-large;
+    margin-bottom: $spacing-medium;
+    color: $primary-color;
+    font-weight: bold;
+  }
+
+  .MuiButton-root {
+    margin-top: $spacing-medium;
+    background-color: $primary-color;
+    color: $white;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+}

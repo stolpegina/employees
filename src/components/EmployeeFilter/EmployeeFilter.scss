@@ -1,0 +1,75 @@
+@use "../../styles/variables" as *;
+
+.employee-filter {
+  display: flex;
+  flex-direction: row;
+  gap: $spacing-medium;
+  padding: $spacing-small;
+  background-color: $background-color;
+  border-radius: $border-radius-medium;
+  box-shadow: $box-shadow-light;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.employee-filter .filter-select {
+  font-size: $font-size-medium;
+  padding: $spacing-small;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-medium;
+  background-color: $white;
+  color: $text-color;
+  cursor: pointer;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.employee-filter .filter-select:focus {
+  border-color: $primary-color;
+  outline: none;
+}
+
+.employee-filter .archive-checkbox {
+  display: flex;
+  align-items: center;
+  gap: $spacing-small;
+  font-size: $font-size-medium;
+  color: $text-color;
+}
+
+.employee-filter .archive-checkbox input {
+  cursor: pointer;
+}
+
+.employee-filter .archive-checkbox input:checked + span {
+  color: $primary-color;
+}
+
+.employee-filter .archive-checkbox:hover {
+  color: $primary-color;
+}
+
+.employee-filter .filter-button {
+  padding: 10px 15px;
+  background-color: $primary-color;
+  color: $white;
+  border: none;
+  border-radius: $border-radius-medium;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.employee-filter .filter-button:hover {
+  background-color: $hover-color;
+}
+
+.employee-filter-archive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  white-space: nowrap;
+}

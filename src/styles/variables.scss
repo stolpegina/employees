@@ -1,0 +1,27 @@
+@use "sass:color";
+
+$primary-color: #005f73;
+$accent-color: #ee9b00;
+$background-color: #f6fbf9;
+$text-color: #1d3557;
+$border-color: #a8dadc;
+$white: #ffffff;
+
+$hover-color: #00414f;
+
+$font-size-large: 24px;
+$font-size-medium: 18px;
+$font-size-small: 14px;
+
+$font-family-primary: "Roboto", sans-serif;
+
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 24px;
+
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$box-shadow-light: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+$max-width-content: 1200px;
+$max-width-card: 300px;

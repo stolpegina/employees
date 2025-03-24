@@ -1,0 +1,45 @@
+@use "../../styles/variables" as *;
+
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-medium;
+  margin: 0 auto;
+  color: $text-color;
+  font-family: $font-family-primary;
+
+  .MuiTextField-root {
+    margin-bottom: $spacing-medium;
+  }
+
+  .MuiFormControl-root {
+    margin-bottom: $spacing-medium;
+  }
+
+  .MuiButton-root {
+    margin-top: $spacing-medium;
+    background-color: $primary-color;
+    color: $white;
+    border-radius: $border-radius-medium;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  .MuiInputLabel-root {
+    color: $text-color;
+  }
+
+  .MuiFormControlLabel-root {
+    color: $text-color;
+
+    .MuiCheckbox-root {
+      color: $primary-color;
+    }
+  }
+}
+
+.Mui-error {
+  color: $accent-color;
+}
